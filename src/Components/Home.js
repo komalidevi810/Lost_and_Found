@@ -50,7 +50,7 @@ export default function Home() {
     };
     Axios({
       method: "POST",
-      url: "hhttp://localhost:5000/sendmessage",
+      url: `${process.env.REACT_APP_API_BASE_URL}/sendmessage`,
       data: data,
     })
       .then((res) => {

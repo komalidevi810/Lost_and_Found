@@ -43,7 +43,7 @@ export default class Signup extends Component {
     };
     // console.log(payload.username)
     axios({
-      url: "http://localhost:5000/signup",
+      url: `${process.env.REACT_APP_API_BASE_URL}/signup`,
       method: "POST",
       data: payload,
     })

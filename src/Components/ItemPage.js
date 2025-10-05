@@ -65,7 +65,7 @@ function ItemPage(props) {
     // console.log("dd")
     Axios({
       method: "POST",
-      url: `http://localhost:5000/activateItem/${item_id}`,
+      url: `${process.env.REACT_APP_API_BASE_URL}/activateItem/${item_id}`,
     })
       .then((res) => {
         console.log("Activated");

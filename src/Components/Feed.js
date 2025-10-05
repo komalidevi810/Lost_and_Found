@@ -64,7 +64,7 @@ export default function Feed() {
   useEffect(() => {
     // console.log("Test");
     Axios({
-      url: "http://localhost:5000/getitem",
+      url: `${process.env.REACT_APP_API_BASE_URL}/getitem`,
       method: "GET",
     })
       .then((response) => {

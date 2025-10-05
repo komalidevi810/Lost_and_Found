@@ -32,7 +32,7 @@ function Navbar() {
 
     console.log("Signed out !");
     axios({
-      url: "http://localhost:5000/signout",
+      url: `${process.env.REACT_APP_API_BASE_URL}/signout`,
       method: "POST",
       headers: {
         Authorization: token ? `Bearer ${token}` : "",

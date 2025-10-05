@@ -42,7 +42,7 @@ function LostItem() {
       });
 
       axios({
-        url: "http://localhost:5000/postitem",
+        url: `${process.env.REACT_APP_API_BASE_URL}/postitem`,
         method: "POST",
         data: info,
         headers: {

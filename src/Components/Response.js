@@ -14,7 +14,7 @@ function Response() {
   const handleShowNumber = (response) => {
     // console.log("Inside :", response);
     Axios({
-      url: `http://localhost:5000/getnumber/${response.belongsTo}`,
+      url: `${process.env.REACT_APP_API_BASE_URL}/${response.belongsTo}`,
       method: "GET",
     })
       .then((response) => {

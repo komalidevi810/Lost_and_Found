@@ -21,7 +21,7 @@ function Login() {
       password: document.getElementById("password").value,
     };
     axios({
-      url: "http://localhost:5000/login",
+      url: `${process.env.REACT_APP_API_BASE_URL}/login`,
       method: "POST",
       data: payload,
 
