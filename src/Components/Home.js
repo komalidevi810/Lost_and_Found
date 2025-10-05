@@ -129,7 +129,7 @@ export default function Home() {
                 />
                 <h4>Create an account</h4>
                 <p>Initially, you have to create an account to get started.</p>
-                <a href="/log-in">
+                <a href="/sign-up">
                   <Button variant="custom" size="lg">
                     Sign Up
                   </Button>
